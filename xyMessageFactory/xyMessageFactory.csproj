@@ -15,6 +15,7 @@
 		<Company>$(Authors) Industries</Company>
 	</PropertyGroup>
 
+	
 	<ItemGroup>
 		<Folder Include="Helper\" />
 	</ItemGroup>
