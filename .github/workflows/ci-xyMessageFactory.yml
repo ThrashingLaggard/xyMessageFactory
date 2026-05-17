@@ -197,7 +197,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          current_version=$(grep -oPm1 "(?<=<PackageVersion>)[^<]+" xyLogger/xyMessageFactory.csproj)
+          current_version=$(grep -oPm1 "(?<=<PackageVersion>)[^<]+" xyMessageFactory/xyMessageFactory.csproj)
           echo "Current version: $current_version"
 
           major=$(echo "$current_version" | cut -d. -f1)
