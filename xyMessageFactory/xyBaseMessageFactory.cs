@@ -37,6 +37,10 @@ namespace xyMessageFactory.Factories
             protected IStringLocalizer? Localizer { get; init; }
 
 
+        #region "Archive"
+        public string ArchiveMoveSuccess(string? what = null)  =>(what is null) ? "Moved the file to archive successfully" : $"Moved the {what} to archive successfully"; 
+        
+        #endregion
 
 
         #region "ListigeCollectionen
